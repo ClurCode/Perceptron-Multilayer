@@ -49,7 +49,7 @@ void Network::setWeights(double weights[])
 void Network::getWeights()
 {
     std::cout<<"<";
-    for(int i = 0; i < sizeof(neuron->input); ++i)
+    for(int i = 0; i < Countof(neuron->input); ++i)
     {
         std::cout<<neuron->weight[i]<<",";
     } std::cout<<">";
